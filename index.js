@@ -32,12 +32,14 @@ app.post('/cool', function(request, response) {
   response.json({
     "response_type": "in_channel",
     "text": "creating face...",
-    "attatchments": [
+    "attachments": [
       {
         "text":cool()
       }
     ]
+    
 });
+
 });
 
 app.listen(app.get('port'), function() {

@@ -31,7 +31,12 @@ app.get('/', function(request, response) {
 app.post('/cool', function(request, response) {
   response.json({
     "response_type": "in_channel",
-    "text": cool(),
+    "text": "creating face...",
+    "attatchments": [
+      {
+        "text":cool()
+      }
+    ]
 });
 });
 

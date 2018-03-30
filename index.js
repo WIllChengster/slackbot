@@ -29,7 +29,9 @@ app.get('/', function(request, response) {
 });
 
 app.post('/cool', function(request, response) {
-  response.send(cool());
+  response.json({
+    cool()
+  });
 });
 
 app.listen(app.get('port'), function() {

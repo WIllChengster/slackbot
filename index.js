@@ -30,8 +30,9 @@ app.get('/', function(request, response) {
 
 app.post('/cool', function(request, response) {
   response.json({
-    cool()
-  });
+    "response_type": "in_channel",
+    "text": cool(),
+});
 });
 
 app.listen(app.get('port'), function() {
